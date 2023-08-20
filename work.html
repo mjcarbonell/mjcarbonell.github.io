@@ -2,32 +2,85 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Operation: Joust</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Your game description here" />
-    <!-- Other meta tags and links... -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Light Souls - Open-World RPG Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Light Souls is an open-world RPG game that I developed using Unity. Drawing inspiration from the renowned Dark Souls series, this game offers players a challenging and immersive experience. One of the unique aspects of Light Souls is its visual style, as the game primarily utilizes polygon shapes created in Blender. This approach not only gives the game a distinct aesthetic but also allows for efficient rendering and optimization. Players can explore a vast and intricately designed world, encountering formidable enemies, discovering hidden treasures, and uncovering the secrets of the game's lore. With its atmospheric environments, intense combat mechanics, and immersive storytelling, Light Souls aims to captivate players and provide them with a memorable and rewarding gaming experience." />
+	<meta name="keywords" content="Light Souls, RPG game, open-world, Unity, Dark Souls, polygon shapes, Blender, atmospheric environments, intense combat mechanics" />
+	<meta name="author" content="Your Name" />
 
-    <!-- Style and script tags... -->
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Light Souls - Open-World RPG Game" />
+	<meta property="og:image" content="path_to_your_game_image.jpg" />
+	<meta property="og:url" content="your_website_url_here" />
+	<meta property="og:site_name" content="Your Website Name" />
+	<meta property="og:description" content="Light Souls is an open-world RPG game that I developed using Unity. Drawing inspiration from the renowned Dark Souls series, this game offers players a challenging and immersive experience. One of the unique aspects of Light Souls is its visual style, as the game primarily utilizes polygon shapes created in Blender. This approach not only gives the game a distinct aesthetic but also allows for efficient rendering and optimization. Players can explore a vast and intricately designed world, encountering formidable enemies, discovering hidden treasures, and uncovering the secrets of the game's lore. With its atmospheric environments, intense combat mechanics, and immersive storytelling, Light Souls aims to captivate players and provide them with a memorable and rewarding gaming experience." />
+	<meta name="twitter:title" content="Light Souls - Open-World RPG Game" />
+	<meta name="twitter:image" content="path_to_your_game_image.jpg" />
+	<meta name="twitter:url" content="your_website_url_here" />
+	<meta name="twitter:card" content="summary_large_image" />
 
-    <style>
-        /* Your styles... */
-    </style>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-    <script>
-        function toggleFullscreen() {
-            var iframe = document.querySelector('iframe');
-            if (iframe) {
-                if (!document.fullscreenElement) {
-                    iframe.requestFullscreen().catch(err => {
-                        console.error('Failed to enter fullscreen:', err);
-                    });
-                } else {
-                    document.exitFullscreen();
-                }
-            }
-        }
-    </script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		header {
+			background-color: #f2f2f2; 
+			color: #fff;
+			padding: 10px;
+		}
+		main {
+			padding: 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+		p {
+			line-height: 1.6;
+			font-size: 18px;
+		}
+		video {
+			width: 100%;
+			height: auto;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
     <header>
@@ -38,10 +91,6 @@
         <iframe src="webGL/index.html" width="800" height="600"></iframe>
 
         <div class="button-container">
-            <a href="https://simmer.io/@mjcarbon/operation-joust" class="btn" style="background-color: darkgray; color: black;">
-                Operation: Joust Click here to play!
-            </a>
-            <!-- Add a button to toggle fullscreen -->
             <button class="btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
         </div>
         <p>
