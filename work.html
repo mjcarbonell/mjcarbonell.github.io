@@ -12,20 +12,22 @@
 
     <style>
         /* Your styles... */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
     </style>
+
+    <script>
+        function toggleFullscreen() {
+            var iframe = document.querySelector('iframe');
+            if (iframe) {
+                if (!document.fullscreenElement) {
+                    iframe.requestFullscreen().catch(err => {
+                        console.error('Failed to enter fullscreen:', err);
+                    });
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -33,12 +35,14 @@
     </header>
     <main>
         <!-- Embed your Unity WebGL game using an iframe -->
-        <iframe src="webGL/index.html" allowfullscreen></iframe>
+        <iframe src="webGL/index.html" width="800" height="600"></iframe>
 
         <div class="button-container">
             <a href="https://simmer.io/@mjcarbon/operation-joust" class="btn" style="background-color: darkgray; color: black;">
-                Operation: Joust Click here to play on Simmer.io!
+                Operation: Joust Click here to play!
             </a>
+            <!-- Add a button to toggle fullscreen -->
+            <button class="btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
         </div>
         <p>
             I developed a game called Operation: Joust in Unity. I used unique polygon shapes created in Blender, resulting in smooth performance. The gameplay involves small-scale combat against turrets that track the player and launch spikes at them. While battling turrets, you navigate through the vast river until you reach the end. It’s still in development as I am adding better UI, enemies, and customization to the game.
