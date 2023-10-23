@@ -127,7 +127,7 @@ figure {
     #colorlib-aside #colorlib-main-menu ul {
       text-align: center;
       margin: 0;
-      padding: 0; }
+      padding: -10; }
       @media screen and (max-width: 768px) {
         #colorlib-aside #colorlib-main-menu ul {
           margin: 0 0 2em 0; } }
@@ -1381,7 +1381,7 @@ body.offcanvas {
 
 .colorlib-nav-toggle {
   position: fixed;
-  left: -5px;
+  left: 5px;
   top: 0px;
   z-index: 9999;
   cursor: pointer;
